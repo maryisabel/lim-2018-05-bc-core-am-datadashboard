@@ -8,11 +8,12 @@ xhrUsers.onload = function() {
         console.log(data);
       } else {
          // We reached our target server, but it returned an error
+        console.log('Ocurrió un error');
       }
 }
-xhrUsers.onerror = function() {
-    cosole.log('Ocurrió un error');
-}
+/*xhrUsers.onerror = function() {
+    console.log('Ocurrió un error');
+} */
 xhrUsers.send ();
 console.log(xhrUsers);
 
@@ -26,11 +27,12 @@ xhrProgress.onload = function() {
         console.log(data);
       } else {
          // We reached our target server, but it returned an error
+         console.log('Ocurrió un error');
       }
 }
-xhrProgress.onerror = function() {
-    cosole.log('Ocurrió un error');
-}
+/*xhrProgress.onerror = function() {
+    console.log('Ocurrió un error');
+} */
 xhrProgress.send ();
 console.log(xhrProgress);
 
@@ -44,11 +46,12 @@ xhrCohorts.onload = function() {
         console.log(data);
       } else {
          // We reached our target server, but it returned an error
+         console.log('Ocurrió un error');
       }
 }
-xhrCohorts.onerror = function() {
-    cosole.log('Ocurrió un error');
-}
+/*xhrCohorts.onerror = function() {
+    console.log('Ocurrió un error');
+} */
 xhrCohorts.send ();
 console.log(xhrCohorts);
 
