@@ -1,0 +1,46 @@
+* {
+    margin: 0 px;
+    padding: 0px;
+}
+body {
+    background: white;
+    color: black;
+  }
+
+#root {
+    margin:auto;
+    margin-top:0px;
+    width: 1300px;
+    height:800px;
+    border: 2px solid #EB984E;
+    background-color: white;
+    padding: 0px;
+}
+#info {
+    width: 260px;
+    height:780px;
+    border: 2px solid blue;
+    background-color: white;
+    padding: 5px;
+}
+.botones {
+    background-color: #F5A9BC;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    color: rgb(58, 5, 68);
+    }
+#logo {
+    display: block;
+    margin: auto;
+    width: 350px;
+    height:120px;
+    padding:0px;   
+}
+#ale {
+    align-content: left;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    
+}
