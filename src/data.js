@@ -44,7 +44,7 @@ console.log(xhrProgress);
 
 function listaCohorts (){
     const xhrCohorts = new XMLHttpRequest();
-    xhrCohorts.open('GET', '/data/cohorts.json');
+    xhrCohorts.open('GET', '../data/cohorts.json');
     xhrCohorts.onload = function() {
         if (xhrCohorts.status >= 200 && xhrCohorts.status < 400) {
             // Success!
