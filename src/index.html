@@ -10,51 +10,56 @@
     <header>
       <img id="logo" src="http://subirimagen.me/uploads/20180612082453.png">
     </header>
-    <div id="root" >
+    <div id="root" > 
       <div id= "info">
         <div id="usuario">
           <table>
             <tr>
               <td><img id="ale" src="http://subirimagen.me/uploads/20180612091446.jpg"></td>
-              <td>Alejandra Ramírez <br> Pesonal Trainer</td>
+              <td id="nameAle">Alejandra Ramírez <br>Training Manager</td>
             </tr>
           </table>
            <!-- <p><img id="ale" src="http://subirimagen.me/uploads/20180612091446.jpg">Alejandra Ramírez <br> Pesonal Trainer </p> -->
         </div>
         <hr>
         <div>
-            <p><img src="" >Cohorts</p>
+            <h3>SEDES</h3><br>
+            <select>
+                <option value="p2017">LIMA</option>
+                <option value="p20181">2018-01</option>
+                <option value="p20182">2018-02</option>
+              </select><br>
+              <select>
+                <option value="p2017">Mexico DC</option>
+                <option value="p20181">2018-01</option>
+                <option value="p20182">2018-02</option>
+              </select><br>
+              <select>
+                <option value="p2017">Sao Paulo</option>
+                <option value="p20181">2018-01</option>
+                <option value="p20182">2018-02</option>
+              </select><br>
+              <select>
+                <option value="p2017">Santiago</option>
+                <option value="p20181">2018-01</option>
+                <option value="p20182">2018-02</option>
+              </select>
+            <form>
+            <input type="button" class="botones" id="boton1" value= "Lista de Cohorts">
+            <ul id ="listaCohortsUl">
+            </ul>
+            </form>
         </div>
-        <div>
-          <select placeholder ="Lima"><p>Lima</p>
-            <option value="p2017">2017-01</option>
-            <option value="p20181">2018-01</option>
-            <option value="p20182">2018-02</option>
-          </select><br>
-          <input type="button" class="botones" id="boton1" value= "Lima"><br>
-          <input type="button" class="botones" id="boton2" value= "México"><br>
-          <input type="button" class="botones" id="boton3" value= "Brasil"><br>
-          <input type="button" class="botones" id="boton4" value= "Chile"><br>
-
-        </div>
-
       </div>
       <div id= "contenido" >
-        <div>
+        <h2>DATA DASHBOARD</h2>
+        <form>
+          <center><img class="diagrama" id="grafico1"src="http://subirimagen.me/uploads/20180614210541.jpg"></center>
+          <img class="diagrama" id="grafico2" src="http://subirimagen.me/uploads/20180614210619.jpg">
+        </form>
 
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        <div>
-
-        </div>
-        
       </div>
-
+    
     </div>
 
     <script src="main.js"></script>

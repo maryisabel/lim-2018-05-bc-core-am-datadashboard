@@ -12,23 +12,28 @@ body {
     margin-top:0px;
     width: 1300px;
     height:800px;
-    border: 2px solid #EB984E;
+    border: 2px solid white;
     background-color: white;
     padding: 0px;
 }
 #info {
+    
     width: 260px;
     height:780px;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     background-color: white;
     padding: 5px;
+    float: left;
+    border-right: 2px solid black;
 }
 .botones {
     background-color: #F5A9BC;
     border-radius: 10px;
-    width: 100px;
+    width: 150px;
     height: 30px;
     color: rgb(58, 5, 68);
+    margin-left: 30px;
+    font-weight: bold;
     }
 #logo {
     display: block;
@@ -37,10 +42,73 @@ body {
     height:120px;
     padding:0px;   
 }
+
 #ale {
     align-content: left;
     height: 80px;
     width: 80px;
     border-radius: 50%;
+}
+ #contenido {
+    display: block;
+    margin: auto;
+    width: 1010px;
+    height:780px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 5px;
+    float:right;
+    text-align: center;
+
+    
+ }
+form {
+    width: 150px;
+    padding: 15px;
+}
+
+#grafico1{
+   /*  display: block;
+    margin: auto; */
+    padding-left: 250px
+} 
+
+#grafico2{
+    /* display: block;
+    margin: auto; */
+    padding-left: 150px;
+    /* padding: 5px; */
+    /* width: 350px;
+    height:120px;
+    padding:0px;   */ 
+}
+h2{
+    background-color:#FFE521; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+#nameAle {
+    padding-left: 30px;
+}
+h3 {
+    background-color:#FFE521; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+select {
+    background-color: #56F89A;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: black (58, 5, 68);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 75px;
     
 }
