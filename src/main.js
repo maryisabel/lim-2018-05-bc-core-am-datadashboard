@@ -135,4 +135,32 @@ const ListOfCohorts = () => {
         //console.log( paintUsersFromCohort(arrayNameUser)+" paintUsersFromCohort(arrayNameUser)")
       })
   };
+//Relacionarlo con el progreso del estudiante
+const getUsersProgress = (idStudent) => {
+  fetch(progressUsers, { method: 'GET' })
+  .then((response) => {
+    if (response.status !== 200) {
+      alert('Error')
+    }
+    return response.json();
+    })
+    .then((progressStudent) => {
+      let progressUser = progressStudent[idStudent]["intro"]["percent"];
+      createContainerForScore(progressUser);
+       console.log(progressUser);
+       document.getElementById("listStudents").style.display = "none";
+       document.getElementById("ProgressStudent").style.display = "block";
+    })
+};
+const createContainerForScore=(scoreForStudent)=>{
+  listProgress.innerHTML="";
+  let createElement_Li = document.createElement('li');
+  createElement_Li.innerText = scoreForStudent;
+  let createElementP = document.createElement('p');
+  createElementP.innerText = "Porcentaje de completidud de todos los cursos";
+  listProgress.appendChild(createElementP);
+  listProgress.appendChild(createElement_Li);
   
+}
+
+
