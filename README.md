@@ -59,6 +59,14 @@ porcentaje para calcular el progreso de los alumnos, es decir no contaba con inf
 
 De a cuerdo a la entrevista, creemos que a través de la interfaz que realizamos resolverá el principal problema del usuario, ya que ayudará a tener mejor información con estadísticas, grados de completitud de Cursos, lecturas y quiz.
 
-En cuanto al proceso de diseño de nuestro interfa, al inicio fue un poco complicado, ya que no teníamos muy bien definido como realizarlo, pero gracias a que recibimos feedback
+En cuanto al proceso de diseño de nuestro interfaz, al inicio fue un poco complicado, ya que no teníamos muy bien definido como realizarlo, pero gracias a que recibimos feedback
 y nos pusimos en el lugar del usuario, logramos realizar nuestro diseño de manera que quedamos conformes principalmente el usuario.
+
+A continuación, nuestro prototipo de alta fidelidad:
+
+![Sin titulo](http://subirimagen.me/uploads/20180615105126.png)
+
+![Sin titulo](http://subirimagen.me/uploads/20180615105402.png)
+
+![Sin titulo](http://subirimagen.me/uploads/20180615105423.png)
 

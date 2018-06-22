@@ -100,7 +100,7 @@ h3 {
     margin-bottom: 0px;
 }
 select {
-    background-color: #56F89A;
+    background-color: white;
     border-radius: 5px;
     width: 100px;
     height: 30px;
@@ -111,4 +111,146 @@ select {
     margin-bottom: 0px;
     margin-left: 75px;
     
+}
+#listStudents {
+    /* display: block; */
+    margin: auto;
+    width: 1010px;
+    height:780px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 5px;
+    float:right;
+    text-align: center;
+}
+
+#tituloEstudiantes{
+    font-weight: bold;
+    text-align: center;
+}
+
+#ProgressStudent {
+    /* display: block; */
+    margin: auto;
+    width: 1010px;
+    height:780px;
+    border: 2px solid white;
+    background-color: white;
+    padding: 5px;
+    float:right;
+    text-align: center;
+}
+
+#selectorOfCohorts{
+    background-color: #FFE521;
+    display: block;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.infoHidden {
+    display: none;
+}
+
+#searchName {
+background-image: url('http://subirimagen.me/uploads/20180621190329.jpg');
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+font-size: 16px;
+background-position: 10px 10px;
+/* 
+
+
+position:absolute;
+		top: 900px;
+        left: 600px; */
+display: block;
+
+
+}
+#mytable {
+    border-collapse: collapse;
+    /*border:1px solid rgb(231, 7, 7);*/
+    border: 1px solid #ddd;
+    width: 950px;
+    /*width: 400;*/
+    font-size: 18px;
+    
+}
+#mytable th, #mytable td {
+    /*border-width: 1px solid #FF7F50;
+    border-collapse: collapse;*/
+    text-align: left;
+    /*border-left-width:1px ;*/
+    padding: 12px;
+} 
+
+#mytable tr {
+    /*width: 500px;*/
+    border-bottom: 1px solid #ddd
+} 
+
+#mytable tr.header, #mytable tr:hover{
+    background-color: #f1f1f1;
+}
+/* #espacio {
+    width: 300 px;
+} */
+
+ul.acorh,
+ul.acorh * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul.acorh {
+margin: 0 auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 18px;
+}
+ul.acorh li {
+list-style: none;
+}
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+color: #000000;
+border-bottom: 1px solid #FFE521;
+text-decoration: none;
+box-sizing: border-box;
+}
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .9s all ease-in;
+}
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #e6ecf0;
+color: #000;
+font-size: 16px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorh li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 1000px;
+transition: .9s all ease-in;
+}
+ul.acorh li a:hover {
+background: #FFE521;
+color: black;
 }
