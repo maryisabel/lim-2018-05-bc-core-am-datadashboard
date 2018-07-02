@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <meta name="viewport" content="width = device-width, maximum-scale=1, initial-scale = 1.0">
-    <!--Para que sea responsive-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'> -->
-    <!-- <link rel='stylesheet prefetch' href='https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css'> -->
-    <link rel="stylesheet prefetch" href="https://cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-      <div id="info">
-    <div>
-      <img id="logo" src="http://subirimagen.me/uploads/20180612082453.png">
-    </div>
-    <hr>
-    <div id="usuario">
-      <div id = "fotoAle">
-        <img id="ale" src="http://subirimagen.me/uploads/20180612091446.jpg">
+<head>
+  <meta charset="utf-8">
+  <title>Data Dashboard</title>
+  <meta name="viewport" content="width = device-width, maximum-scale=1, initial-scale = 1.0">
+  <!--Para que sea responsive-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <!-- <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'> -->
+  <!-- <link rel='stylesheet prefetch' href='https://cdn.datatables.net/plug-ins/f2c75b7247b/integration/bootstrap/3/dataTables.bootstrap.css'> -->
+  <link rel='stylesheet prefetch' href='https://cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css'>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="root">
+    <div id="info">
+      <div>
+        <img id="logo" src="http://subirimagen.me/uploads/20180612082453.png">
       </div>
-      <div id="aleName">
-          <p id="nameAle">Alejandra Ramírez
-             <br>Training Manager</p>
+      <hr>
+      <div id="usuario">
+        <div id = "fotoAle">
+          <img id="ale" src="http://subirimagen.me/uploads/20180612091446.jpg">
+        </div>
+        <div id="aleName">
+            <p id="nameAle">Alejandra Ramírez
+               <br>Training Manager</p>
+        </div>
       </div>
-    </div>
-
-    <div id= "sedesylistas">
+      <hr>
+      <div id= "sedesylistas">
         <nav>
             <ul class="acorh">
               <li>
@@ -40,7 +41,7 @@
                 </a>
                 <ul class="children">
                   <li class="submenu2">
-                    <a  class ="branch" href="#"><span class="icon-stats-dots"></span> Lima</a>
+                    <a  class ='branch' href="#"><span class="icon-stats-dots"></span> Lima</a>
                     <ul class="children2">
                       <li class="submenu3">
                        
@@ -75,7 +76,7 @@
                     </ul>
                   </li>
                   <li class="submenu2">
-                    <a class ="branch" href="#"><span class="icon-stats-dots"></span> México</a>
+                    <a class ='branch' href="#"><span class="icon-stats-dots"></span> México</a>
                     <ul class="children2">
                       <li class="submenu3">
                         
@@ -100,7 +101,7 @@
                     </ul>
                   </li>
                   <li class="submenu2">
-                    <a class ="branch" href="#"> <span class="icon-stats-dots"></span> Sao Paulo</a>
+                    <a class ='branch' href="#"> <span class="icon-stats-dots"></span> Sao Paulo</a>
                     <ul class="children2">
                       <li class="submenu3">
                         
@@ -130,7 +131,7 @@
                     </ul>
                   </li>
                   <li class="submenu2">
-                    <a class ="branch" href="#"><span class="icon-stats-dots"></span> Chile</a>
+                    <a class ='branch' href="#"><span class="icon-stats-dots"></span> Chile</a>
                     <ul class="children2">
                       <li class="submenu3">
                         
@@ -160,64 +161,106 @@
                     </ul>
                   </li>
                 </ul>
-              </li>
-             </ul>
           </nav>
-</div>
-        <select name="sede" id="sede" style="visibility:hidden">
-          <option value="lim">Lima - Perú</option>
-        </select>
-        <br><br>
-        <label for="">Selecciona cohort</label>
-        <br><br>
-        <select name="cohorts" id="selectCohort"></select>
-        <br><br>
-        <label for="">Ordenar</label>
-        <br><br>
-        <select id="orderBy">
-          <option>Nombre</option>
-          <option>Porcentaje Completitud Total</option>
-          <option>Porcentaje ejercicios completos</option>
-          <option>Porcentaje Quizzes completos</option>
-          <option>Puntuacion promedio en quizzes</option>
-          <option>Porcentaje de lecturas completadas</option>
-        </select>
-        <select id="orderDirection">
-          <option>ASC</option>
-          <option>DESC</option>
-        </select><br><br>
-        <button type="button" name="button" id="btnMostrar">Mostrar datos</button>
-        <!--</center>-->
-      
+        <form>        
+          <center><label>LISTA DE COHORTS</label></center>
+          <select id='selectorOfCohorts' class="hidden" name="Lista Cohorts"></select>        
+          <ul id="listaCohortsUl">
+          </ul>
+          <button id="primeraFuncion">Primera funcion</button>
+          <button id="Ordenar">Ordenar</button>
+        </form>
       </div>
-      <div id="contenido">
-        <h2>DATA DASHBOARD</h2>
+    </div>
+    <div id="contenido">
+      <h2>DATA DASHBOARD</h2>
+      <form>
+        <center>
+          <img class="diagrama" id="grafico1" src="http://subirimagen.me/uploads/20180614210541.jpg">
+        </center>
+        <img class="diagrama" id="grafico2" src="http://subirimagen.me/uploads/20180614210619.jpg">
+      </form>
+    </div>
+    <div id="listStudents" class="infoHidden">
+      <h2 id="titleListStudent">PRE CORE 2018 - 03</h2>
+      <!--<button id="Search">Buscar</button>-->
+      <label for="tituloEstudiantes" id="tituloEstudiantes">LISTA DE ESTUDIANTES</label><br>
+      <div class="orderYbuscador" id="selectOrder">
+
+
+        <!-- <form> -->       
+          <p>Ordenar por: <select style="width:250px">
+              <option value="">Nombre ASC</option>
+              <option value="">Nombre DESC</option>
+              <option value="">Porcentaje general ASC</option>
+              <option value="">Porcentaje general DESC</option>
+              <option value="">Ejercicios ASC</option>
+              <option value="">Ejercicios DESC</option>
+              <option value="">Quizzes ASC</option>
+              <option value="">Quizzes DESC</option>
+              <option value="">Score Promedio ASC</option>
+              <option value="">Score Promedio DESC</option>
+              <option value="">Lecturas ASC</option>
+              <option value="">Lecturas DESC</option>
+            </select>
+          </p>
+        <!-- </form> -->
+      </div>
+      <div class="orderYbuscador" id="Buscador">
         <form>
-          <center>
-            <img class="diagrama" id="grafico1" src="http://subirimagen.me/uploads/20180614210541.jpg">
-          </center>
-          <img class="diagrama" id="grafico2" src="http://subirimagen.me/uploads/20180614210619.jpg">
+          <input id="searchName" type="text" placeholder="Search for names.." title="Type in a name"/>
+
+         
+
         </form>
       </div>
-
-
-      <figure id="Resultados">
         
-        <form class="">
-            <center><label id="listaEst" for="">LISTA DE ESTUDIANTES</label></center>
-           <br>
-           <label for="">Filtra por nombre: </label>
-          <input type="text" name="" id="searchName">
-        </form>
-       <br>
-        <div>
-          <table id="tablaEstudiantes">
+        <!-- <table id='mytable' style="width:400px">
+          <tr class="header">
+            <th>Nombre</th> -->
+            <!-- <th>ID</th> -->
+         <!--  </tr> -->
+          <!-- <tr>
+            <td id="nomEstudiantes"></td>
+             <td id= "idUsers"></td>
+          </tr> -->
+        <!-- </table> -->
+        <table class="table table-bordered table-hover dt-responsive" ID="mytable">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Porcentaje</th>
+                <th>Ejercicios</th>
+                <th>Quizzes</th>
+                <th>Prom Score</th>
+                <th>Lecturas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="nomEstudiantes"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>              
+            </tbody>
+            <!-- <tfoot>
+              <tr>
+                <td></td>
+              </tr>
+            </tfoot> -->
           </table>
-        </div>
-      </figure>
-    
+      </form>
+    </div>
+    <div id="ProgressStudent" class="infoHidden">
+      <h2>PROGRESO ALUMNA</h2>
+      <ul class="listProgress" id="containerListProgress"></ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="data.js"></script>
   
-    <script src="data.js" ></script>
-    <script src="main.js" ></script>
-  </body>
+</body>
 </html>

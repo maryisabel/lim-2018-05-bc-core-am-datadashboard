@@ -1,159 +1,299 @@
-
+/* * {
+    margin: 0 px;
+    padding: 0px;
+} */
 body {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-weight: 600;
-  }
-  
-  #contenido {
-    display: block;
-    margin: auto;
-    width: 950px;
-    height:20px;
-    border: 2px solid white;
-    background-color: white;
-    padding: 2px;
-    float:right;
-    text-align: center;
-    
-  }
-  
-  table,td {
-    border: 2px groove #FFE521;
-    
-  }
-  
-  
-  figure {
-    margin: 0%;
-    margin-top: 1%;
-    float: right;
-    width: 65%;
-    display: block;
-    height: 70px;
-    padding: 2%;
-    padding-bottom: 30%;
-   
-  }
-  
-  #logo {
-    display: block;
-    margin: auto;
-    width: 250px;
-    height:90px;
-    padding:0px;   
-  }
-  
-  
-  hr {
-    border-color:#FFE521;
-  }
-  
-  #usuario {
-    display:block;
-    width: 260px;
-    height:80px;
-  } 
-  
-  #fotoAle{
-    display: block;
-    margin:auto;
-    float: left;
-    
-    width: 100px;
-    height:80px;
-  }
-  
-  #ale {
-    align-content: left;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-  }
-  
-  #aleName {
-    display: block;
-    margin:auto;
-    width: 150px;
-    height:80px;
-    float: right;
-  }
-  
-  
-  h2{
-    background-color:#FFE521; 
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 0px;
-  }
-  
-  
-  #listaEst{
-    text-decoration: underline;
-  }
-  
-  #info { 
-    width: 370px;
-    height:780px;
-    /* border: 2px solid blue; */
-    background-color: white;
-    padding: 5px;
-    float: left;
-    border-right: 2px solid black;
-  }
-  
-  
-  
-  ul.acorh,
-  ul.acorh * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-  }
-  
-  ul.acorh {
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  width: 100%;
-  font-size: 18px;
-  }
-  ul.acorh li {
-  list-style: none;
-  }
-  ul.acorh li a {
-  display: block;
-  padding: 10px 10px 10px 20px;
-  color: #000000;
-  border-bottom: 1px solid #FFE521;
-  text-decoration: none;
-  box-sizing: border-box;
-  }
-  ul.acorh li ul {
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  transition: .9s all ease-in;
-  }
-  ul.acorh li li a {
-  padding: 10px 10px 10px 40px;
-  background: #e6ecf0;
-  color: #000;
-  font-size: 16px;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  }
-  ul.acorh li li:last-child a {
-  border-bottom: 0;
-  }
-  ul.acorh li:hover ul {
-  max-height: 1000px;
-  transition: .9s all ease-in;
-  }
-  ul.acorh li a:hover {
-  background: #FFE521;
+  background: white;
   color: black;
-  }
+}
+
+#root {
+  margin:auto;
+  margin-top:0px;
+  width: 1300px;
+  height:800px;
+  border: 2px solid white;
+  background-color: white;
+  padding: 0px;
+}
+#info {
   
+  width: 274px;
+  height:780px;
+  /* border: 2px solid blue; */
+  background-color: white;
+  padding: 5px;
+  float: left;
+  border-right: 1px solid black;
+}
+.botones {
+  background-color: #F5A9BC;
+  border-radius: 10px;
+  width: 150px;
+  height: 30px;
+  color: rgb(58, 5, 68);
+  margin-left: 30px;
+  font-weight: bold;
+  }
+#logo {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height:90px;
+  padding:0px;   
+}
+
+#ale {
+  align-content: left;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+}
+#contenido {
+  display: block;
+  margin: auto;
+  width: 1014px;
+  height:780px;
+  border: 0px solid #FFE521;
+  border-left: 1px solid black;
+  background-color: white;
+  padding: 0px #FFE521;
+  float:right;
+  text-align: center;
+
+  
+}
+form {
+  width: 150px;
+  padding: 15px;
+}
+
+#grafico1{
+ /*  display: block;
+  margin: auto; */
+  padding-left: 250px
+} 
+
+#grafico2{
+  /* display: block;
+  margin: auto; */
+  padding-left: 150px;
+  /* padding: 5px; */
+  /* width: 350px;
+  height:120px;
+  padding:0px;   */ 
+}
+hr {
+  border-color:#FFE521;
+}
+h2{
+  background-color:#FFE521; 
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+#usuario {
+  display:block;
+  width: 260px;
+  height:80px;
+} 
+#fotoAle{
+  display: block;
+  margin:auto;
+  float: left;
+  
+  width: 100px;
+  height:80px;
+}
+
+#aleName {
+  display: block;
+  margin:auto;
+  width: 150px;
+  height:80px;
+  float: right;
+}
+
+h3 {
+  background-color:#FFE521; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+select {
+  background-color: white;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  color: black (58, 5, 68);
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 75px;
+  
+}
+#listStudents {
+  /* display: block; */
+  margin: auto;
+  width: 1014px;
+  height:780px;
+  border: 0px solid white;
+  border-left: 1px solid black;
+  background-color: white;
+  padding-left: 5px #FFE521;
+  float:right;
+  text-align: center;
+}
+
+#tituloEstudiantes{
+  font-weight: bold;
+  text-align: center;
+}
+
+#ProgressStudent {
+  /* display: block; */
+  margin: auto;
+  width: 1014px;
+  height:780px;
+  border: 0px solid #FFE521;
+  border-left: 1px solid black;
+  background-color: white;
+  padding: 0px #FFE521;
+  float:right;
+  text-align: center;
+}
+
+#selectorOfCohorts{
+  background-color: #FFE521;
+  display: block;
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  color: black;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.infoHidden {
+  display: none;
+}
+
+#searchName {
+background-image: url('http://subirimagen.me/uploads/20180621190329.jpg');
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+font-size: 16px;
+background-position: 10px 10px;
+display: block;
+
+
+}
+#mytable {
+  border-collapse: collapse;
+  /*border:1px solid rgb(231, 7, 7);*/
+  border: 1px solid #ddd;
+  width: 950px;
+  /*width: 400;*/
+  font-size: 18px;
+  
+}
+#mytable th, #mytable td {
+  /*border-width: 1px solid #FF7F50;
+  border-collapse: collapse;*/
+  text-align: left;
+  /*border-left-width:1px ;*/
+  padding: 12px;
+} 
+
+#mytable tr {
+  /*width: 500px;*/
+  border-bottom: 1px solid #ddd
+} 
+
+#mytable tr.header, #mytable tr:hover{
+  background-color: #f1f1f1;
+}
+/* #espacio {
+  width: 300 px;
+} */
+
+ul.acorh,
+ul.acorh * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+ul.acorh {
+margin: 0 auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 18px;
+}
+ul.acorh li {
+list-style: none;
+}
+ul.acorh li a {
+display: block;
+padding: 10px 10px 10px 20px;
+color: #000000;
+border-bottom: 1px solid #FFE521;
+text-decoration: none;
+box-sizing: border-box;
+}
+ul.acorh li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .9s all ease-in;
+}
+ul.acorh li li a {
+padding: 10px 10px 10px 40px;
+background: #e6ecf0;
+color: #000;
+font-size: 16px;
+border: 0;
+border-bottom: 1px solid #ccc;
+box-sizing: border-box;
+}
+ul.acorh li li:last-child a {
+border-bottom: 0;
+}
+ul.acorh li:hover ul {
+max-height: 1000px;
+transition: .9s all ease-in;
+}
+ul.acorh li a:hover {
+background: #FFE521;
+color: black;
+}
+/* CSS DE LA TABLA */
+table.dataTable th,
+table.dataTable td {
+white-space: nowrap;
+}
+/* CSS DEL ORDENADOR Y BUSCADOR */
+.orderYbuscador {
+  width: 400px;
+  margin: auto;
+  
+  height:70px;
+  border: 2px solid white;
+
+}
+#selectOrder{
+  float:right;
+  padding: 0px;
+  text-align: left;
+}
+#Buscador{
+  float:left;
+  /* text-align: center; */
+
+}
